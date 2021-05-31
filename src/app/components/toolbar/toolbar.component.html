@@ -1,0 +1,38 @@
+<ion-toolbar color="primary">
+  <ion-title class="app-title" slot="start">
+    <b>MSC Velden e.V. im ADAC</b>
+  </ion-title>
+  <ion-label slot="end" *ngIf="isDesktop">
+    <ion-label routerLink="/Home" *ngIf="router.url === '/Home'" class="nav-link"><b>Home</b></ion-label>
+    <ion-label routerLink="/Home" *ngIf="router.url !== '/Home'" class="nav-link">Home</ion-label>
+    <ion-label routerLink="/Training" *ngIf="router.url === '/Training'" class="nav-link"><b>Training</b></ion-label>
+    <ion-label routerLink="/Training" *ngIf="router.url !== '/Training'" class="nav-link">Training</ion-label>
+    <ion-label routerLink="/Über uns" *ngIf="router.url === '/%C3%9Cber%20uns'" class="nav-link"><b>Über uns</b></ion-label>
+    <ion-label routerLink="/Über uns" *ngIf="router.url !== '/%C3%9Cber%20uns'" class="nav-link">Über uns</ion-label>
+    <ion-label routerLink="/Impressum" *ngIf="router.url === '/Impressum'" class="nav-link"><b>Impressum</b></ion-label>
+    <ion-label routerLink="/Impressum" *ngIf="router.url !== '/Impressum'" class="nav-link">Impressum</ion-label>
+  </ion-label>
+</ion-toolbar>
+
+<ion-fab horizontal="end" vertical="top" slot="fixed" *ngIf="!isDesktop">
+  <ion-fab-button>
+    <ion-icon *ngIf="router.url === '/Home'" name="home"></ion-icon>
+    <ion-icon *ngIf="router.url === '/Training'" name="barbell"></ion-icon>
+    <ion-icon *ngIf="router.url == '/%C3%9Cber%20uns'" name="newspaper"></ion-icon>
+    <ion-icon *ngIf="router.url === '/Impressum'" name="information"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list>
+    <ion-fab-button routerLink="/Home" color="light">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button routerLink="/Training" color="light">
+      <ion-icon name="barbell"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button routerLink="/Über uns" color="light">
+      <ion-icon name="newspaper"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button routerLink="/Impressum" color="light">
+      <ion-icon name="information"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>

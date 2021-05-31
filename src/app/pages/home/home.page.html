@@ -1,0 +1,37 @@
+<ion-header>
+  <app-toolbar></app-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngIf="('HOME.ARTICLES' | translate) != 'HOME.ARTICLES'">
+        <ion-card *ngFor="let article of ('HOME.ARTICLES' | translate)">
+          <ion-img *ngIf="article.image" src="{{ article.image }}"></ion-img>
+          <ion-card-header *ngIf="article.title">
+            <ion-card-title color="primary">
+              <b>{{ article.title }}</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content *ngIf="article.content">
+            <ion-label>
+              {{ article.content }}<br>
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngIf="('HOME.ARTICLES' | translate) == 'HOME.ARTICLES'">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="danger">
+              {{ ('GENERAL.error' | translate) }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{ ('GENERAL.loadingError' | translate) }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

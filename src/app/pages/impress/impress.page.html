@@ -1,0 +1,54 @@
+<ion-header>
+  <app-toolbar></app-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngIf="('IMPRESS.CONTACT' | translate) != 'IMPRESS.CONTACT'">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="primary">
+              {{ ('IMPRESS.title' | translate) }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div *ngFor="let contact of ('IMPRESS.CONTACT' | translate)">
+              <ion-label *ngIf="contact.name">
+                <b>{{ contact.name }}</b><b *ngIf="contact.position"> ({{ contact.position }})</b><br>
+              </ion-label>
+              <ion-label *ngIf="contact.adress1">
+                {{ contact.adress1 }}<br>
+              </ion-label>
+              <ion-label *ngIf="contact.adress2">
+                {{ contact.adress2 }}<br>
+              </ion-label>
+              <ion-label *ngIf="contact.telephone">
+                {{ ('IMPRESS.telephone' | translate) }} {{ contact.telephone }}<br>
+              </ion-label>
+              <ion-label *ngIf="contact.fax">
+                {{ ('IMPRESS.fax' | translate) }} {{ contact.fax }}<br>
+              </ion-label>
+              <ion-label *ngIf="contact.email">
+                {{ ('IMPRESS.email' | translate) }} {{ contact.email }}
+              </ion-label>
+              <br>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngIf="('IMPRESS.CONTACT' | translate) == 'IMPRESS.CONTACT'">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="danger">
+              {{ ('GENERAL.error' | translate) }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{ ('GENERAL.loadingError' | translate) }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

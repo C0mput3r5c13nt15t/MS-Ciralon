@@ -1,0 +1,69 @@
+<ion-header>
+  <app-toolbar></app-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngIf="('ABOUT.ARTICLES' | translate) != 'ABOUT.ARTICLES'">
+        <ion-card *ngFor="let article of ('ABOUT.ARTICLES' | translate)">
+          <ion-img *ngIf="article.image" src="{{ article.image }}"></ion-img>
+          <ion-card-header *ngIf="article.title">
+            <ion-card-title color="primary">
+              <b>{{ article.title }}</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content *ngIf="article.content">
+            <ion-label>
+              {{ article.content }}<br>
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" *ngIf="('ABOUT.HISTORY' | translate) != 'ABOUT.HISTORY'">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="primary">
+              <b>{{ ('ABOUT.history' | translate) }}</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="timeline">
+              <ng-container *ngFor="let event of ('ABOUT.HISTORY' | translate)">
+                <div class="container {{ event.side }}">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title color="primary" class="small-card-title">
+                        <b>{{ event.title }}</b>
+                      </ion-card-title>
+                      <ion-card-subtitle  *ngIf="event.date">
+                        {{ event.date }}
+                      </ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content *ngIf="event.description">
+                      <ion-label class="small-label">
+                        {{ event.description }}
+                      </ion-label>
+                    </ion-card-content>
+                  </ion-card>
+                </div>
+              </ng-container>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngIf="('ABOUT.ARTICLES' | translate) == 'ABOUT.ARTICLES' || ('ABOUT.HISTORY' | translate) == 'ABOUT.HISTORY'">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="danger">
+              {{ ('GENERAL.error' | translate) }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{ ('GENERAL.loadingError' | translate) }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

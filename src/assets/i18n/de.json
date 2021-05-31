@@ -1,0 +1,70 @@
+{
+  "GENERAL": {
+    "error": "Fehler",
+    "loadingError": "Es gab einen Fehler beim Laden der Seite. Bitte warte kurz und lade die Seite anschließend neu. Falls der Fehler bestehen bleibt, wende dich bitte an den Webseitenbetreiber (pauljustus279@gmail.com)."
+  },
+  "HOME": {
+    "ARTICLES": [
+      {
+        "image": "assets/svg/landing.svg"
+      }
+    ]
+  },
+  "TRAINING": {
+    "ARTICLES": [
+      {
+        "title": "Wie sieht das Training aus?",
+        "content": "Wir trainieren normalerweise immer Samstags ab 13 Uhr. Durch Corona ist dieser Rythmus allerdings gestört. Wenn ihr vorbeikommen wollt, ruft vorher einfach an!"
+      },
+      {
+        "title": "Und wo?",
+        "map_url": "es ist noch egal was hier steht"
+      }
+    ]
+  },
+  "ABOUT": {
+    "ARTICLES": [
+      {
+        "title": "Über den MSC Velden",
+        "content": "Wir sind der Motor Sport Club Velden und bräuchten dringend Nachwuchs! Und außerdem jemanden der diesen Text hier über uns schreibt. Wenn du an einer dieser Möglichkeiten Interesse hast, oder dich auch anderweitig in den Verein miteinbringen möchtest, ruf einfach an!"
+      }
+    ],
+    "history": "Unsere Geschichte",
+    "HISTORY": [
+      {
+        "side": "right",
+        "title": "Internetauftritt",
+        "date": "31.05.2021",
+        "description": "Die erste Version des Internetauftritts geht live!"
+      },
+      {
+        "side": "left",
+        "title": "Gründung des Vereins"
+      }
+    ]
+  },
+  "IMPRESS": {
+    "title": "Impressum",
+    "telephone": "Tel.",
+    "fax": "Fax",
+    "email": "E-Mail",
+    "CONTACT": [
+      {
+        "name": "Joseph Tafelmaier",
+        "position": "Sportleiter",
+        "telephone": "08742/1469"
+      },
+      {
+        "name": "Axel Maier",
+        "position": "Jugendwart",
+        "telephone": "08742/964697"
+      },
+      {
+        "name": "Paul Maier",
+        "position": "Webseitenbetreiber",
+        "telephone": "+49 1733/780289",
+        "email": "pauljustus279@gmail.com"
+      }
+    ]
+  }
+}

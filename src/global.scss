@@ -24,3 +24,37 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-grid {
+  min-width: 240px;
+  max-width: 1200px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+ion-title {
+  padding: 0;
+}
+
+ion-card-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.app-title {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+ion-label {
+  font-size: large;
+}
+
+.nav-link {
+  margin-right: 25px;
+  cursor: pointer;
+  word-break: keep-all;
+}
