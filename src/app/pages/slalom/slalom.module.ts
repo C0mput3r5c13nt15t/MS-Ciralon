@@ -1,26 +1,30 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import {  HttpClient } from '@angular/common/http';
 
 import { IonicModule } from '@ionic/angular';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { FooterComponent } from './footer/footer.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { TrainingPageRoutingModule } from './slalom-routing.module';
+import { TrainingPage } from './slalom.page';
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
+import { ComponentsModule } from '../../components/componets.module';
+
 @NgModule({
   imports: [
-    IonicModule,
     CommonModule,
-    RouterModule,
+    FormsModule,
+    IonicModule,
+    TrainingPageRoutingModule,
+    ComponentsModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
@@ -29,7 +33,6 @@ export function createTranslateLoader(http: HttpClient) {
       }
     })
   ],
-  declarations: [FooterComponent, ToolbarComponent],
-  exports: [FooterComponent, ToolbarComponent]
+  declarations: [TrainingPage]
 })
-export class ComponentsModule {}
+export class TrainingPageModule {}

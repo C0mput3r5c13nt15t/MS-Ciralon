@@ -25,36 +25,47 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+/* Imports the color variables */
+@import "./theme/variables.scss";
+
+/* Colors the selection */
+::-moz-selection {
+  color: black;
+  background: var(--ion-color-primary, yellow);
+}
+
+::selection {
+  color: black;
+  background: var(--ion-color-primary, yellow);
+}
+
+/* Global styles */
 ion-grid {
   min-width: 240px;
   max-width: 1200px;
 }
 
-.no-padding {
-  padding: 0;
-}
-
 ion-title {
   padding: 0;
+  font-family: 'Coustard', serif;
+  font-size: 25px;
+  color: black;
 }
 
 ion-card-title {
   text-align: center;
+  font-family: 'Coustard', serif;
   font-size: 30px;
 }
 
-.app-title {
-  text-align: left;
-  font-size: 20px;
-  margin-left: 25px;
+ion-card-subtitle {
+  color: black;
 }
 
 ion-label {
-  font-size: large;
-}
-
-.nav-link {
-  margin-right: 25px;
-  cursor: pointer;
-  word-break: keep-all;
+  white-space: pre-line;
+  font-size: medium;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: black;
 }

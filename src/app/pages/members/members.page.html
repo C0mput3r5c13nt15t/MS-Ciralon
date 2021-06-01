@@ -1,0 +1,89 @@
+<ion-header>
+  <app-toolbar></app-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngIf="('PAGES.MEMBERS.title' | translate) != 'PAGES.MEMBERS.title'">
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              {{ ('PAGES.MEMBERS.title' | translate) }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content *ngIf="('PAGES.MEMBERS.MEMBERS' | translate) != 'PAGES.MEMBERS.MEMBERS'">
+            <ion-grid>
+              <ion-row *ngIf="('PAGES.MEMBERS.MEMBERS.EXECUTIVE' | translate) != 'PAGES.MEMBERS.MEMBERS.EXECUTIVE'">
+                <ion-title>
+                  {{ ('PAGES.MEMBERS.MEMBERS.executive' | translate) }}
+                </ion-title>
+              </ion-row>
+              <ion-row *ngIf="('PAGES.MEMBERS.MEMBERS.EXECUTIVE' | translate) != 'PAGES.MEMBERS.MEMBERS.EXECUTIVE'">
+                <ion-col sizeXl="2" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let contact of ('PAGES.MEMBERS.MEMBERS.EXECUTIVE' | translate)">
+                  <ion-label *ngIf="contact.name">
+                    <b>{{ contact.name }}</b><br>
+                  </ion-label>
+                  <ion-label *ngIf="contact.position">
+                    {{ contact.position }}
+                  </ion-label>
+                  <br><br>
+                </ion-col>
+              </ion-row>
+              <ion-row *ngIf="('PAGES.MEMBERS.MEMBERS.DRIVER' | translate) != 'PAGES.MEMBERS.MEMBERS.DRIVER'">
+                <ion-title>
+                  {{ ('PAGES.MEMBERS.MEMBERS.driver' | translate) }}
+                </ion-title>
+              </ion-row>
+              <ion-row *ngIf="('PAGES.MEMBERS.MEMBERS.DRIVER' | translate) != 'PAGES.MEMBERS.MEMBERS.DRIVER'">
+                <ion-col sizeXl="2" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let contact of ('PAGES.MEMBERS.MEMBERS.DRIVER' | translate)">
+                  <ion-label *ngIf="contact.name">
+                    <b>{{ contact.name }}</b>
+                  </ion-label>
+                  <br><br>
+                </ion-col>
+              </ion-row>
+              <ion-row *ngIf="('PAGES.MEMBERS.MEMBERS.OTHERS' | translate) != 'PAGES.MEMBERS.MEMBERS.OTHERS'">
+                <ion-title>
+                  {{ ('PAGES.MEMBERS.MEMBERS.others' | translate) }}
+                </ion-title>
+              </ion-row>
+              <ion-row *ngIf="('PAGES.MEMBERS.MEMBERS.OTHERS' | translate) != 'PAGES.MEMBERS.MEMBERS.OTHERS'">
+                <ion-col sizeXl="2" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let contact of ('PAGES.MEMBERS.MEMBERS.OTHERS' | translate)">
+                  <ion-label *ngIf="contact.name">
+                    {{ contact.name }}
+                  </ion-label>
+                  <br><br>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+          <br>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="('PAGES.ABOUT.ARTICLES' | translate) == 'PAGES.ABOUT.ARTICLES'">
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="danger" *ngIf="('GENERAL.error' | translate) != 'GENERAL.error'">
+              {{ ('GENERAL.error' | translate) }}
+            </ion-card-title>
+            <ion-card-title color="danger" *ngIf="('GENERAL.error' | translate) == 'GENERAL.error'">
+              Fehler
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label *ngIf="('GENERAL.loadingError' | translate) != 'GENERAL.loadingError'">
+              {{ ('GENERAL.loadingError' | translate) }}
+            </ion-label>
+            <ion-label *ngIf="('GENERAL.loadingError' | translate) == 'GENERAL.loadingError'">
+              Es gab einen Fehler beim Laden der i18n Dokumente!
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-footer></app-footer>
+</ion-content>

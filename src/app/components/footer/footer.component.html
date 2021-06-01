@@ -1,0 +1,22 @@
+<div>
+  <ion-toolbar color="dark">
+    <ion-grid *ngIf="('COMPONENTS.FOOTER.LINKS' | translate) != 'COMPONENTS.FOOTER.LINKS'" class="padding-grid">
+      <ion-row>
+        <ion-col sizeXl="2" sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="12" *ngFor="let link of ('COMPONENTS.FOOTER.LINKS' | translate)">
+          <a href="{{ link.url }}"  class="nav-link">{{ link.name }}</a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <hr>
+    <ion-grid class="padding-grid">
+      <ion-row>
+        <ion-col style="text-align: left;">
+          <ion-label class="copyright">{{ ('COMPONENTS.FOOTER.copyright' | translate) }}</ion-label>
+        </ion-col>
+        <ion-col style="text-align: right;">
+          <ion-label routerLink="/impress" class="nav-link">{{ ('COMPONENTS.FOOTER.impress' | translate) }}</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</div>

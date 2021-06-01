@@ -1,28 +1,40 @@
-.app-title {
-  font-family: 'Martel', serif;
-  text-align: left;
-  font-size: 30px;
-  margin-left: 25px;
-  margin-bottom: 0;
+@import "../../../theme/variables.scss";
+
+.padding-grid {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.app-sub-title {
-  font-family: 'Martel', serif;
-  text-align: left;
-  font-size: 18px;
-  margin-left: 25px;
-  margin-top: -15px;
+ion-col{
+  text-align: center;
+}
+
+hr {
+  background-color: rgba(255,255,255,.9);
+  min-width: 240px;
+  max-width: 1200px;
+}
+
+ion-label {
+  font-size: large;
+}
+
+.copyright {
+  display: inline;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: rgba(255,255,255,.9);
 }
 
 .nav-link {
-  font-size: large;
+  display: inline;
   margin-right: 15px;
   margin-left: 15px;
   cursor: pointer;
   position: relative;
   text-decoration: none;
   font-weight: 400;
-  color: black;
+  color: rgba(255,255,255,.9);
   transition: all .35s ease;
   &::before {
       content: "";
@@ -31,7 +43,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: black;
+      background-color: rgba(255,255,255,.9);
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -39,7 +51,7 @@
       transition: all 0.3s ease-in-out 0s;
   }
   &:hover {
-      color: black;
+      color: rgba(255,255,255,.9);
       &::before {
           visibility: visible;
           -webkit-transform: scaleX(1);

@@ -4,17 +4,17 @@
 
 <ion-content>
   <ion-grid>
-    <ion-row *ngIf="('PAGES.HOME.title' | translate) != 'PAGES.HOME.title'">
+    <ion-row *ngIf="('PAGES.SLALOM.title' | translate) != 'PAGES.SLALOM.title'">
       <ion-col>
         <ion-card>
           <ion-card-header>
             <ion-card-title>
-              {{ ('PAGES.HOME.title' | translate) }}
+              {{ ('PAGES.SLALOM.title' | translate) }}
             </ion-card-title>
-            <ion-card-content *ngIf="('PAGES.HOME.ARTICLES' | translate) != 'PAGES.HOME.ARTICLES'">
+            <ion-card-content>
               <ion-grid>
-                <ion-row>
-                  <ion-col size="12" *ngFor="let article of ('PAGES.HOME.ARTICLES' | translate)">
+                <ion-row *ngIf="('PAGES.SLALOM.ARTICLES' | translate) != 'PAGES.SLALOM.ARTICLES'">
+                  <ion-col size="12" *ngFor="let article of ('PAGES.SLALOM.ARTICLES' | translate)">
                     <ion-img *ngIf="article.image" src="{{ article.image }}"></ion-img>
                     <ion-title *ngIf="article.title">
                       {{ article.title }}
@@ -22,6 +22,9 @@
                     <ion-label *ngIf="article.content">
                       {{ article.content }}
                     </ion-label>
+                    <div *ngIf="article.map_url">
+                      <div class="mapouter center"><div class="gmap_canvas"><iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=EDEKA%20Dreifke,%20Gewerbering,%20Velden&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:700px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:700px;}</style></div></div>
+                    </div>
                     <br>
                   </ion-col>
                 </ion-row>

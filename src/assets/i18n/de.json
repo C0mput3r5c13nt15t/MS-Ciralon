@@ -3,68 +3,211 @@
     "error": "Fehler",
     "loadingError": "Es gab einen Fehler beim Laden der Seite. Bitte warte kurz und lade die Seite anschließend neu. Falls der Fehler bestehen bleibt, wende dich bitte an den Webseitenbetreiber (pauljustus279@gmail.com)."
   },
-  "HOME": {
-    "ARTICLES": [
-      {
-        "image": "assets/svg/landing.svg"
+  "PAGES": {
+    "HOME": {
+      "title": "Willkommen beim MSC Velden",
+      "ARTICLES": [
+        {
+          "content": "Hier findest du alle möglichen Informationen über den Motorsportclub Velden. Du erfährts etwas über den Verein, seine Mitglieder, was wir machen und wie du Teil davon werden kannst!"
+        },
+        {
+          "title": "Motorsport-Kategorien",
+          "content": "Der MSC-Velden ist in den Kategorien Kart- und Autoslalom vertreten, wenn du nähres zu diesen Kategorien erfahren möchtest, kannst du die entsprechenden Seiten dazu besuchen."
+        },
+        {
+          "title": "Internetseite noch im Aufbau!",
+          "content": "Die Internetseite, die du hier siehts ist aktuell noch im Aufbau. Es kann sein, dass manche Dinge noch nicht richtig funktionieren, oder, dass an manchen Stellen noch Informationen fehlen. Das sollte dich aber nicht davon abhalten dich schon einmal umzusehen!"
+        }
+      ]
+    },
+    "SLALOM": {
+      "title": "Kartslalom",
+      "ARTICLES": [
+        {
+          "title": "Was ist Kartslalom?",
+          "content": "Eine durchaus berechtigte und wichtige Frage, auf die wir hier eine Antwort geben wollen. Fangen wir deshalb doch von Vorne an: Fragen wir Wikipedia.\n\nKartslalom ist die Breitensportvariante des Kartsports. Hierbei wird mit Karts mit Viertaktmotoren auf Parkplätzen oder ähnlichen befestigten Plätzen auf einem mit Pylonen abgesteckten Kurs gegen die Zeit gefahren. Dabei ist immer nur ein Fahrer auf der Strecke. Kartslalom wird hauptsächlich von Kindern und Jugendlichen von 6 bis 18 Jahren ausgeübt. Der ursprüngliche Jugendkartslalom wurde in den 1980er Jahren erfunden. Es gibt jedoch mittlerweile auch Sparten, bei denen die Altersgrenzen nach oben offen sind.\n- Wikipedia\n\nOk, das ist also alles was es zu Kartslalom zu wissen gibt? NEIN! Denn es gehört natürlich mehr dazu als in seinem Gefährt über den Asphalt zu schlengeln."
+        },
+        {
+          "title": "Was alles dazugehört",
+          "content": "..."
+        },
+        {
+          "title": "Die Kosten",
+          "content": "Der Kartslalom findet unter der Schirmherrschaft des ADAC statt, weshalb geringe Kosten ein gutes Aushängeschild für den Einstieg sind. Der ADAC-Ortsclub übernimmt die Kosten für Karts, Reifen und Benzin. Kartslalom ist also entgegen der allgemeinen Meinung alles andere als Teuer!"
+        },
+        {
+          "title": "Das Training",
+          "content": "..."
+        },
+        {
+          "title": "Übung macht den Meister",
+          "content": "..."
+        },
+        {
+          "title": "Anfahrt",
+          "map_url": "es ist noch egal was hier steht"
+        }
+      ]
+    },
+    "ABOUT": {
+      "title": "Der MSC Velden",
+      "ARTICLES": [
+        {
+          "title": "Über den MSC Velden",
+          "content": "..."
+        }
+      ],
+      "history": "Unsere Geschichte",
+      "HISTORY": [
+        {
+          "side": "left",
+          "title": "Internetauftritt"
+        },
+        {
+          "side": "right",
+          "title": "Stammtisch"
+        },
+        {
+          "side": "left",
+          "title": "Heimrennen"
+        },
+        {
+          "side": "right",
+          "title": "\"Beule\" Karts"
+        },
+        {
+          "side": "left",
+          "title": "Heimrennen"
+        },
+        {
+          "side": "right",
+          "title": "Stammtisch"
+        },
+        {
+          "side": "left",
+          "title": "Heimrennen"
+        },
+        {
+          "side": "right",
+          "title": "Gründung des Vereins"
+        }
+      ]
+    },
+    "MEMBERS": {
+      "title": "Mitglieder",
+      "MEMBERS": {
+        "executive": "Vorstand",
+        "EXECUTIVE": [
+          {
+            "name": "Stephan Rott",
+            "position": "1. Vorstand"
+          },
+          {
+            "name": "Tony ...",
+            "position": "2. Vorstand"
+          },
+          {
+            "name": "Josef Tafelmaier",
+            "position": "Sportleiter"
+          },
+          {
+            "name": "Axel Maier",
+            "position": "Jugendleiter"
+          }
+        ],
+        "driver": "Fahrer",
+        "DRIVER": [
+          {
+            "name": "Paul Maier"
+          },
+          {
+            "name": "Lea Maier"
+          },
+          {
+            "name": "Daniel Maier"
+          }
+        ],
+        "others": "Andere"
       }
-    ]
+    },
+    "IMPRESS": {
+      "title": "Impressum",
+      "telephone": "Tel.",
+      "fax": "Fax",
+      "email": "E-Mail",
+      "CONTACT": [
+        {
+          "name": "Stephan Rott",
+          "position": "1. Vorstand",
+          "telephone": "08086/8131"
+        },
+        {
+          "name": "Joseph Tafelmaier",
+          "position": "Sportleiter",
+          "telephone": "08742/1469"
+        },
+        {
+          "name": "Axel Maier",
+          "position": "Jugendleiter",
+          "telephone": "08742/964697"
+        },
+        {
+          "name": "Paul Maier",
+          "position": "Webseitenbetreiber",
+          "telephone": "+49 1733/780289",
+          "email": "pauljustus279@gmail.com"
+        }
+      ]
+    }
   },
-  "TRAINING": {
-    "ARTICLES": [
-      {
-        "title": "Wie sieht das Training aus?",
-        "content": "Wir trainieren normalerweise immer Samstags ab 13 Uhr. Durch Corona ist dieser Rythmus allerdings gestört. Wenn ihr vorbeikommen wollt, ruft vorher einfach an!"
-      },
-      {
-        "title": "Und wo?",
-        "map_url": "es ist noch egal was hier steht"
-      }
-    ]
-  },
-  "ABOUT": {
-    "ARTICLES": [
-      {
-        "title": "Über den MSC Velden",
-        "content": "Wir sind der Motor Sport Club Velden und bräuchten dringend Nachwuchs! Und außerdem jemanden der diesen Text hier über uns schreibt. Wenn du an einer dieser Möglichkeiten Interesse hast, oder dich auch anderweitig in den Verein miteinbringen möchtest, ruf einfach an!"
-      }
-    ],
-    "history": "Unsere Geschichte",
-    "HISTORY": [
-      {
-        "side": "right",
-        "title": "Internetauftritt",
-        "date": "31.05.2021",
-        "description": "Die erste Version des Internetauftritts geht live!"
-      },
-      {
-        "side": "left",
-        "title": "Gründung des Vereins"
-      }
-    ]
-  },
-  "IMPRESS": {
-    "title": "Impressum",
-    "telephone": "Tel.",
-    "fax": "Fax",
-    "email": "E-Mail",
-    "CONTACT": [
-      {
-        "name": "Joseph Tafelmaier",
-        "position": "Sportleiter",
-        "telephone": "08742/1469"
-      },
-      {
-        "name": "Axel Maier",
-        "position": "Jugendwart",
-        "telephone": "08742/964697"
-      },
-      {
-        "name": "Paul Maier",
-        "position": "Webseitenbetreiber",
-        "telephone": "+49 1733/780289",
-        "email": "pauljustus279@gmail.com"
-      }
-    ]
+  "COMPONENTS": {
+    "TOOLBAR": {
+      "LINKS": [
+        {
+          "name": "Home",
+          "url": "/home",
+          "icon": "home"
+        },
+        {
+          "name": "Kartslalom",
+          "url": "/slalom",
+          "icon": "infinite"
+        },
+        {
+          "name": "Verein",
+          "url": "/about",
+          "icon": "business"
+        },
+        {
+          "name": "Mitglieder",
+          "url": "/members",
+          "icon": "people"
+        },
+        {
+          "name": "Impressum",
+          "url": "/impress",
+          "icon": "information"
+        }
+      ]
+    },
+    "FOOTER": {
+      "links": "Links",
+      "LINKS": [
+        {
+          "name": "ADAC",
+          "url": "https://www.adac.de"
+        },
+        {
+          "name": "Motorsport Niederbayern",
+          "url": "https://www.motorsport-niederbayern.de/"
+        },
+        {
+          "name": "Google Fonts",
+          "url": "https://www.fonts.google.com"
+        }
+      ],
+      "copyright": "© 2021 MSC Velden",
+      "impress": "Impressum"
+    }
   }
 }

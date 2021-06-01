@@ -4,51 +4,66 @@
 
 <ion-content>
   <ion-grid>
-    <ion-row>
-      <ion-col *ngIf="('IMPRESS.CONTACT' | translate) != 'IMPRESS.CONTACT'">
+    <ion-row *ngIf="('PAGES.IMPRESS.title' | translate) != 'PAGES.IMPRESS.title'">
+      <ion-col>
         <ion-card>
           <ion-card-header>
-            <ion-card-title color="primary">
-              {{ ('IMPRESS.title' | translate) }}
+            <ion-card-title>
+              {{ ('PAGES.IMPRESS.title' | translate) }}
             </ion-card-title>
           </ion-card-header>
-          <ion-card-content>
-            <div *ngFor="let contact of ('IMPRESS.CONTACT' | translate)">
-              <ion-label *ngIf="contact.name">
-                <b>{{ contact.name }}</b><b *ngIf="contact.position"> ({{ contact.position }})</b><br>
-              </ion-label>
-              <ion-label *ngIf="contact.adress1">
-                {{ contact.adress1 }}<br>
-              </ion-label>
-              <ion-label *ngIf="contact.adress2">
-                {{ contact.adress2 }}<br>
-              </ion-label>
-              <ion-label *ngIf="contact.telephone">
-                {{ ('IMPRESS.telephone' | translate) }} {{ contact.telephone }}<br>
-              </ion-label>
-              <ion-label *ngIf="contact.fax">
-                {{ ('IMPRESS.fax' | translate) }} {{ contact.fax }}<br>
-              </ion-label>
-              <ion-label *ngIf="contact.email">
-                {{ ('IMPRESS.email' | translate) }} {{ contact.email }}
-              </ion-label>
-              <br>
-            </div>
+          <ion-card-content *ngIf="('PAGES.IMPRESS.CONTACT' | translate) != 'PAGES.IMPRESS.CONTACT'">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="12" *ngFor="let contact of ('PAGES.IMPRESS.CONTACT' | translate)">
+                  <ion-label *ngIf="contact.name">
+                    <b>{{ contact.name }}</b><b *ngIf="contact.position"> ({{ contact.position }})</b><br>
+                  </ion-label>
+                  <ion-label *ngIf="contact.adress1">
+                    {{ contact.adress1 }}<br>
+                  </ion-label>
+                  <ion-label *ngIf="contact.adress2">
+                    {{ contact.adress2 }}<br>
+                  </ion-label>
+                  <ion-label *ngIf="contact.telephone">
+                    {{ ('PAGES.IMPRESS.telephone' | translate) }} {{ contact.telephone }}<br>
+                  </ion-label>
+                  <ion-label *ngIf="contact.fax">
+                    {{ ('PAGES.IMPRESS.fax' | translate) }} {{ contact.fax }}<br>
+                  </ion-label>
+                  <ion-label *ngIf="contact.email">
+                    {{ ('PAGES.IMPRESS.email' | translate) }} {{ contact.email }}
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
           </ion-card-content>
+          <br><br>
         </ion-card>
       </ion-col>
-      <ion-col *ngIf="('IMPRESS.CONTACT' | translate) == 'IMPRESS.CONTACT'">
+    </ion-row>
+    <ion-row *ngIf="('PAGES.ABOUT.ARTICLES' | translate) == 'PAGES.ABOUT.ARTICLES'">
+      <ion-col>
         <ion-card>
           <ion-card-header>
-            <ion-card-title color="danger">
+            <ion-card-title color="danger" *ngIf="('GENERAL.error' | translate) != 'GENERAL.error'">
               {{ ('GENERAL.error' | translate) }}
+            </ion-card-title>
+            <ion-card-title color="danger" *ngIf="('GENERAL.error' | translate) == 'GENERAL.error'">
+              Fehler
             </ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            {{ ('GENERAL.loadingError' | translate) }}
+            <ion-label *ngIf="('GENERAL.loadingError' | translate) != 'GENERAL.loadingError'">
+              {{ ('GENERAL.loadingError' | translate) }}
+            </ion-label>
+            <ion-label *ngIf="('GENERAL.loadingError' | translate) == 'GENERAL.loadingError'">
+              Es gab einen Fehler beim Laden der i18n Dokumente!
+            </ion-label>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <app-footer></app-footer>
 </ion-content>
