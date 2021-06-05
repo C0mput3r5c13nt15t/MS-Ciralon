@@ -31,12 +31,12 @@
 /* Colors the selection */
 ::-moz-selection {
   color: black;
-  background: var(--ion-color-primary, yellow);
+  background: var(--ion-color-primary, green);
 }
 
 ::selection {
   color: black;
-  background: var(--ion-color-primary, yellow);
+  background: var(--ion-color-primary, green);
 }
 
 /* Global styles */

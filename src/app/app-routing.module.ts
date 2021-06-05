@@ -20,8 +20,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   },
   {
-    path: 'slalom',
-    loadChildren: () => import('./pages/slalom/slalom.module').then( m => m.TrainingPageModule)
+    path: 'page',
+    loadChildren: () => import('./pages/page/page.module').then( m => m.PagePageModule)
   },
   {
     path: 'members',

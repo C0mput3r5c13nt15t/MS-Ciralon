@@ -27,6 +27,6 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.screensizeService.onResize(this.platform.width());
     });
-    this.translate.setDefaultLang('de');
+    this.translate.setDefaultLang('en');
   }
 }

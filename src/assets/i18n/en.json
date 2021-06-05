@@ -1,0 +1,236 @@
+{
+  "GENERAL": {
+    "error": "Fehler",
+    "loadingError": "Es gab einen Fehler beim Laden der Seite. Bitte warte kurz und lade die Seite anschließend neu. Falls der Fehler bestehen bleibt, wende dich bitte an den Webseitenbetreiber (pauljustus279@gmail.com)."
+  },
+  "PAGES": {
+    "HOME": {
+      "title": "Welcome!",
+      "ARTICLES": [
+        {
+          "content": "This was originally supposed to be the web page for my local motor sports club, however I decided against building a cms from scratch and instead went with wordpress. This repository is therefore only a static angular ionic page with translation, mobile support, etc. If you want to you can use this as a template for your next project.\n\nPS: You can easily change the color by replacing the primary color in the variables.scss\n\nPPS: Currently the page does not support dark mode."
+        },
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        }
+      ]
+    },
+    "SLALOM": {
+      "title": "Lorem ipsum",
+      "ARTICLES": [
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+        {
+          "title": "Map",
+          "map_url": true
+        }
+      ]
+    },
+    "ABOUT": {
+      "title": "Lorem ipsum",
+      "ARTICLES": [
+        {
+          "title": "Lorem ipsum",
+          "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        }
+      ],
+      "history": "Lorem ipsum",
+      "HISTORY": [
+        {
+          "side": "left",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "right",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "left",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "right",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "left",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "right",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "left",
+          "title": "Lorem ipsum"
+        },
+        {
+          "side": "right",
+          "title": "Lorem ipsum"
+        }
+      ]
+    },
+    "MEMBERS": {
+      "title": "Lorem ipsum",
+      "MEMBERS": {
+        "executive": "Lorem ipsum",
+        "EXECUTIVE": [
+          {
+            "name": "Lorem ipsum",
+            "position": "1. Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum",
+            "position": "1. Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum",
+            "position": "Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum",
+            "position": "Lorem ipsum"
+          }
+        ],
+        "driver": "Lorem ipsum",
+        "DRIVER": [
+          {
+            "name": "Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum"
+          }
+        ],
+        "others": "Lorem ipsum",
+        "OTHERS": [
+          {
+            "name": "Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum"
+          },
+          {
+            "name": "Lorem ipsum"
+          }
+        ]
+      }
+    },
+    "IMPRESS": {
+      "title": "Lorem ipsum",
+      "telephone": "Telephone",
+      "fax": "Fax",
+      "email": "Email",
+      "CONTACT": [
+        {
+          "name": "Lorem ipsum",
+          "position": "1. Lorem ipsum",
+          "telephone": "00000/0000"
+        },
+        {
+          "name": "Lorem ipsum",
+          "position": "Lorem ipsum",
+          "telephone": "00000/0000"
+        },
+        {
+          "name": "Lorem ipsum",
+          "position": "Lorem ipsum",
+          "telephone": "00000/0000"
+        },
+        {
+          "name": "Lorem ipsum",
+          "position": "Lorem ipsum",
+          "telephone": "00000/0000",
+          "email": "lorem@ipsum.com"
+        }
+      ]
+    }
+  },
+  "COMPONENTS": {
+    "TOOLBAR": {
+      "LINKS": [
+        {
+          "name": "Home",
+          "url": "/home",
+          "icon": "home"
+        },
+        {
+          "name": "Lorem ipsum",
+          "url": "/page",
+          "icon": "infinite"
+        },
+        {
+          "name": "Lorem ipsum",
+          "url": "/about",
+          "icon": "business"
+        },
+        {
+          "name": "Lorem ipsum",
+          "url": "/members",
+          "icon": "people"
+        },
+        {
+          "name": "Impress",
+          "url": "/impress",
+          "icon": "information"
+        }
+      ]
+    },
+    "FOOTER": {
+      "links": "Links",
+      "LINKS": [
+        {
+          "name": "The creator",
+          "url": "https://github.com/C0mput3r5c13nt15t"
+        },
+        {
+          "name": "The creator",
+          "url": "https://github.com/C0mput3r5c13nt15t"
+        },
+        {
+          "name": "The creator",
+          "url": "https://github.com/C0mput3r5c13nt15t"
+        },
+        {
+          "name": "The creator",
+          "url": "https://github.com/C0mput3r5c13nt15t"
+        },
+        {
+          "name": "The creator",
+          "url": "https://github.com/C0mput3r5c13nt15t"
+        },
+        {
+          "name": "The creator",
+          "url": "https://github.com/C0mput3r5c13nt15t"
+        }
+      ],
+      "copyright": "© 2021 C0mput3r5c13nt15t",
+      "impress": "Impress"
+    }
+  }
+}
